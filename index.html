@@ -9,52 +9,10 @@
 </head>
 <body>
 
-    <div class="top-bar">
-        <div class="top-links">
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-        </div>
-        <div class="top-socials">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-    </div>
+    <!-- Dynamic Common Header Placeholder -->
+    <div id="common-header"></div>
 
-    <header class="main-header">
-        <div class="logo-area">
-            <div class="logo-placeholder"><i class="fa-solid fa-mountain-sun"></i> APNA KASHMIR</div>
-        </div>
-        <div class="header-right">
-            <select class="lang-dropdown">
-                <option>English (English)</option>
-                <option>हिंदी (Hindi)</option>
-                <option>اردو (Urdu)</option>
-            </select>
-            <div class="search-box">
-                <input type="text" placeholder="Search news...">
-                <button><i class="fa fa-search"></i></button>
-            </div>
-        </div>
-    </header>
-
-    <nav class="navbar">
-        <a href="#" class="active"><i class="fa fa-home"></i></a>
-        <a href="#">Home</a>
-        <a href="#">Jammu & Kashmir</a>
-        <a href="#">India</a>
-        <a href="#">World</a>
-        <a href="#">Politics</a>
-        <a href="#">Business</a>
-        <a href="#">Education</a>
-        <a href="#">Tourism</a>
-        <a href="#">Weather</a>
-        <a href="#">Videos <i class="fa fa-caret-down"></i></a>
-    </nav>
-
+    <!-- Breaking News Ticker (Stays on home page) -->
     <div class="ticker-container">
         <div class="ticker-title">BREAKING NEWS</div>
         <div class="ticker-text">J&K: Security forces conduct search operation in Anantnag district • India's GDP growth rises to 7.8% in Q4</div>
@@ -62,9 +20,11 @@
 
     <div class="main-layout">
         
+        <!-- Hero Section / Top Story -->
         <div class="hero-section">
             <div class="hero-card">
-                <img src="https://images.unsplash.com/photo-1566837430420-9d040b868a57?auto=format&fit=crop&w=800&q=80" alt="Kashmir Paradise" class="hero-img">
+                <!-- Updated with a working beautiful landscape image link -->
+                <img src="https://images.unsplash.com/photo-1595841696662-a30949108b12?auto=format&fit=crop&w=1200&q=80" alt="Kashmir Paradise" class="hero-img">
                 <div class="hero-overlay">
                     <span class="badge">Top Story</span>
                     <h2 class="hero-title">Kashmir: Paradise on Earth</h2>
@@ -74,6 +34,7 @@
             </div>
         </div>
 
+        <!-- Sidebar Widgets -->
         <div class="sidebar">
             <div class="sidebar-section">
                 <h3 class="section-title">Trending Now</h3>
@@ -108,6 +69,7 @@
             </div>
         </div>
 
+        <!-- Latest News Section -->
         <div class="latest-news-section">
             <div class="section-header">
                 <h3 class="section-title">Latest News</h3>
@@ -133,6 +95,7 @@
             </div>
         </div>
 
+        <!-- Multilingual News Section -->
         <div class="lang-section">
             <h3 class="section-title">News in Your Language / آپ کی زبان میں خبریں / आपकी भाषा में समाचार</h3>
             <div class="lang-grid">
@@ -169,6 +132,7 @@
             </div>
         </div>
 
+        <!-- Newsletter Subscription -->
         <div class="newsletter">
             <div class="newsletter-info">
                 <i class="fa-regular fa-envelope"></i>
@@ -185,6 +149,7 @@
 
     </div>
 
+    <!-- Footer Section -->
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
@@ -225,6 +190,19 @@
         </div>
     </footer>
 
+    <!-- JavaScript script to load header.html automatically -->
+    <script>
+        fetch('header.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Header load nahi ho paya');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('common-header').innerHTML = data;
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+
 </body>
-</html>
-  
+                                                                              </html>
+

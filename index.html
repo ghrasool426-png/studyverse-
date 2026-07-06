@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News Today - Latest Breaking News</title>
+
+<meta name="description" content="Read the latest breaking news, politics, business, technology, sports and entertainment updates.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#222;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+background:#d50000;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+nav a{
+margin-left:20px;
+font-weight:500;
+}
+
+.breaking{
+background:#111;
+color:white;
+padding:10px;
+overflow:hidden;
+}
+
+.breaking span{
+color:#ff3b3b;
+font-weight:bold;
+margin-right:15px;
+}
+
+marquee{
+display:inline;
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:30px auto;
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:25px;
+}
+
+.hero{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.hero img{
+width:100%;
+height:420px;
+object-fit:cover;
+}
+
+.hero-content{
+padding:25px;
+}
+
+.hero h1{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.hero p{
+line-height:1.7;
+color:#555;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+background:#d50000;
+color:white;
+padding:12px 25px;
+border-radius:5px;
+}
+
+.sidebar{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.widget{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.widget h3{
+margin-bottom:15px;
+border-left:4px solid red;
+padding-left:10px;
+}
+
+.widget ul{
+list-style:none;
+}
+
+.widget li{
+padding:10px 0;
+border-bottom:1px solid #eee;
+}
+
+.section{
+width:90%;
+max-width:1300px;
+margin:40px auto;
+}
+
+.section h2{
+margin-bottom:20px;
+}
+
+.news-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card-content{
+padding:18px;
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:20px;
+}
+
+.card p{
+font-size:14px;
+color:#666;
+line-height:1.6;
+}
+
+.newsletter{
+background:#d50000;
+color:white;
+padding:60px 20px;
+text-align:center;
+margin-top:60px;
+}
+
+.newsletter input{
+width:320px;
+padding:12px;
+border:none;
+border-radius:5px;
+margin-top:15px;
+}
+
+.newsletter button{
+padding:12px 25px;
+border:none;
+background:#111;
+color:white;
+border-radius:5px;
+margin-left:10px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:40px;
+}
+
+@media(max-width:900px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero img{
+height:250px;
+}
+
+.newsletter input{
+width:100%;
+margin-bottom:10px;
+}
+
+.newsletter button{
+margin-left:0;
+width:100%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">NEWS TODAY</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">India</a>
+<a href="#">World</a>
+<a href="#">Politics</a>
+<a href="#">Technology</a>
+<a href="#">Business</a>
+<a href="#">Sports</a>
+
+</nav>
+
+</header>
+
+<div class="breaking">
+
+<span>BREAKING</span>
+
+<marquee>
+
+Latest breaking news from India and around the world. Stay updated 24/7 with trusted news coverage.
+
+</marquee>
+
+</div>
+
+<div class="container">
+
+<div class="hero">
+
+<img src="https://picsum.photos/900/500" alt="News">
+
+<div class="hero-content">
+
+<h1>Top Story of the Day</h1>
+
+<p>
+
+Read today's biggest headlines covering politics, technology, economy, sports and world affairs with accurate and reliable reporting.
+
+</p>
+
+<a class="btn" href="#">Read Full Story</a>
+
+</div>
+
+</div>
+
+<div class="sidebar">
+
+<div class="widget">
+
+<h3>Trending News</h3>
+
+<ul>
+
+<li>Election Updates</li>
+
+<li>Technology News</li>
+
+<li>Business Market</li>
+
+<li>Sports Headlines</li>
+
+<li>Entertainment News</li>
+
+</ul>
+
+</div>
+
+<div class="widget">
+
+<h3>Categories</h3>
+
+<ul>
+
+<li>Politics</li>
+
+<li>Technology</li>
+
+<li>Business</li>
+
+<li>Sports</li>
+
+<li>Health</li>
+
+<li>Education</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<section class="section">
+
+<h2>Latest News</h2>
+
+<div class="news-grid">
+
+<div class="card">
+
+<img src="https://picsum.photos/400/250?1">
+
+<div class="card-content">
+
+<h3>Technology News</h3>
+
+<p>Latest updates from AI, smartphones, startups and innovation.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/400/250?2">
+
+<div class="card-content">
+
+<h3>Politics</h3>
+
+<p>Today's political developments from India and around the globe.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/400/250?3">
+
+<div class="card-content">
+
+<h3>Sports</h3>
+
+<p>Cricket, football and other sports updates with live coverage.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/400/250?4">
+
+<div class="card-content">
+
+<h3>Business</h3>
+
+<p>Stock market, economy, finance and business news.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="newsletter">
+
+<h2>Subscribe to Our Newsletter</h2>
+
+<p>Get daily breaking news directly in your inbox.</p>
+
+<input type="email" placeholder="Enter your email">
+
+<button>Subscribe</button>
+
+</div>
+
+<footer>
+
+<p>© 2026 News Today. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+  </html>

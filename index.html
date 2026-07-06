@@ -1,445 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apna kashmir- Latest Breaking News</title>
-
-<meta name="description" content="Read the latest breaking news, politics, business, technology, sports and entertainment updates.">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-}
-
-body{
-background:#f5f5f5;
-color:#222;
-}
-
-a{
-text-decoration:none;
-color:inherit;
-}
-
-header{
-background:#d50000;
-color:white;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-size:28px;
-font-weight:700;
-}
-
-nav a{
-margin-left:20px;
-font-weight:500;
-}
-
-.breaking{
-background:#111;
-color:white;
-padding:10px;
-overflow:hidden;
-}
-
-.breaking span{
-color:#ff3b3b;
-font-weight:bold;
-margin-right:15px;
-}
-
-marquee{
-display:inline;
-}
-
-.container{
-width:90%;
-max-width:1300px;
-margin:30px auto;
-display:grid;
-grid-template-columns:2fr 1fr;
-gap:25px;
-}
-
-.hero{
-background:white;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.hero img{
-width:100%;
-height:420px;
-object-fit:cover;
-}
-
-.hero-content{
-padding:25px;
-}
-
-.hero h1{
-font-size:34px;
-margin-bottom:15px;
-}
-
-.hero p{
-line-height:1.7;
-color:#555;
-}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-background:#d50000;
-color:white;
-padding:12px 25px;
-border-radius:5px;
-}
-
-.sidebar{
-display:flex;
-flex-direction:column;
-gap:20px;
-}
-
-.widget{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.widget h3{
-margin-bottom:15px;
-border-left:4px solid red;
-padding-left:10px;
-}
-
-.widget ul{
-list-style:none;
-}
-
-.widget li{
-padding:10px 0;
-border-bottom:1px solid #eee;
-}
-
-.section{
-width:90%;
-max-width:1300px;
-margin:40px auto;
-}
-
-.section h2{
-margin-bottom:20px;
-}
-
-.news-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-}
-
-.card-content{
-padding:18px;
-}
-
-.card h3{
-margin-bottom:10px;
-font-size:20px;
-}
-
-.card p{
-font-size:14px;
-color:#666;
-line-height:1.6;
-}
-
-.newsletter{
-background:#d50000;
-color:white;
-padding:60px 20px;
-text-align:center;
-margin-top:60px;
-}
-
-.newsletter input{
-width:320px;
-padding:12px;
-border:none;
-border-radius:5px;
-margin-top:15px;
-}
-
-.newsletter button{
-padding:12px 25px;
-border:none;
-background:#111;
-color:white;
-border-radius:5px;
-margin-left:10px;
-cursor:pointer;
-}
-
-footer{
-background:#111;
-color:white;
-padding:30px;
-text-align:center;
-margin-top:40px;
-}
-
-@media(max-width:900px){
-
-.container{
-grid-template-columns:1fr;
-}
-
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
-.hero img{
-height:250px;
-}
-
-.newsletter input{
-width:100%;
-margin-bottom:10px;
-}
-
-.newsletter button{
-margin-left:0;
-width:100%;
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Kashmir - Sach Ki Aawaaz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-
-<div class="logo">Apna kashmir</div>
-
-<nav>
-
-<a href="#">Home</a>
-<a href="#">India</a>
-<a href="#">World</a>
-<a href="#">Politics</a>
-<a href="#">Technology</a>
-<a href="#">Business</a>
-<a href="#">Sports</a>
-
-</nav>
-
-</header>
-
-<div class="breaking">
-
-<span>BREAKING</span>
-
-<marquee>
-
-Latest breaking news from India and around the world. Stay updated 24/7 with trusted news coverage.
-
-</marquee>
-
-</div>
-
-<div class="container">
-
-<div class="hero">
-
-<img src="https://picsum.photos/900/500" alt="News">
-
-<div class="hero-content">
-
-<h1>Top Story of the Day</h1>
-
-<p>
-
-Read today's biggest headlines covering politics, technology, economy, sports and world affairs with accurate and reliable reporting.
-
-</p>
-
-<a class="btn" href="#">Read Full Story</a>
-
-</div>
-
-</div>
-
-<div class="sidebar">
-
-<div class="widget">
-
-<h3>Trending News</h3>
-
-<ul>
-
-<li>Election Updates</li>
-
-<li>Technology News</li>
-
-<li>Business Market</li>
-
-<li>Sports Headlines</li>
-
-<li>Entertainment News</li>
-
-</ul>
-
-</div>
-
-<div class="widget">
-
-<h3>Categories</h3>
-
-<ul>
-
-<li>Politics</li>
-
-<li>Technology</li>
-
-<li>Business</li>
-
-<li>Sports</li>
-
-<li>Health</li>
-
-<li>Education</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<section class="section">
-
-<h2>Latest News</h2>
-
-<div class="news-grid">
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?1">
-
-<div class="card-content">
-
-<h3>Technology News</h3>
-
-<p>Latest updates from AI, smartphones, startups and innovation.</p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?2">
-
-<div class="card-content">
-
-<h3>Politics</h3>
-
-<p>Today's political developments from India and around the globe.</p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?3">
-
-<div class="card-content">
-
-<h3>Sports</h3>
-
-<p>Cricket, football and other sports updates with live coverage.</p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?4">
-
-<div class="card-content">
-
-<h3>Business</h3>
-
-<p>Stock market, economy, finance and business news.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<div class="newsletter">
-
-<h2>Subscribe to Our Newsletter</h2>
-
-<p>Get daily breaking news directly in your inbox.</p>
-
-<input type="email" placeholder="Enter your email">
-
-<button>Subscribe</button>
-
-</div>
-
-<footer>
-
-<p>© 2026 Apna kashmir. All Rights Reserved.</p>
-
-</footer>
+    <div class="top-bar">
+        <div class="top-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="top-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="logo-area">
+            <div class="logo-placeholder"><i class="fa-solid fa-mountain-sun"></i> APNA KASHMIR</div>
+        </div>
+        <div class="header-right">
+            <select class="lang-dropdown">
+                <option>English (English)</option>
+                <option>हिंदी (Hindi)</option>
+                <option>اردو (Urdu)</option>
+            </select>
+            <div class="search-box">
+                <input type="text" placeholder="Search news...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="#" class="active"><i class="fa fa-home"></i></a>
+        <a href="#">Home</a>
+        <a href="#">Jammu & Kashmir</a>
+        <a href="#">India</a>
+        <a href="#">World</a>
+        <a href="#">Politics</a>
+        <a href="#">Business</a>
+        <a href="#">Education</a>
+        <a href="#">Tourism</a>
+        <a href="#">Weather</a>
+        <a href="#">Videos <i class="fa fa-caret-down"></i></a>
+    </nav>
+
+    <div class="ticker-container">
+        <div class="ticker-title">BREAKING NEWS</div>
+        <div class="ticker-text">J&K: Security forces conduct search operation in Anantnag district • India's GDP growth rises to 7.8% in Q4</div>
+    </div>
+
+    <div class="main-layout">
+        
+        <div class="hero-section">
+            <div class="hero-card">
+                <img src="https://images.unsplash.com/photo-1566837430420-9d040b868a57?auto=format&fit=crop&w=800&q=80" alt="Kashmir Paradise" class="hero-img">
+                <div class="hero-overlay">
+                    <span class="badge">Top Story</span>
+                    <h2 class="hero-title">Kashmir: Paradise on Earth</h2>
+                    <p class="hero-desc">From breathtaking landscapes to rich culture, Kashmir continues to captivate the world.</p>
+                    <a href="#" class="btn-read">Read Full Story</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="section-title">Trending Now</h3>
+                <ul class="trending-list">
+                    <li class="trending-item">
+                        <span class="trending-num">1</span>
+                        <div class="trending-text">J&K: New tourism policy to boost local economy</div>
+                    </li>
+                    <li class="trending-item">
+                        <span class="trending-num">2</span>
+                        <div class="trending-text">Srinagar receives season's first heavy snowfall</div>
+                    </li>
+                    <li class="trending-item">
+                        <span class="trending-num">3</span>
+                        <div class="trending-text">India's new education policy impact in J&K</div>
+                    </li>
+                    <li class="trending-item">
+                        <span class="trending-num">4</span>
+                        <div class="trending-text">Encounter breaks out in Kulgam</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="section-title">Popular Categories</h3>
+                <div class="category-grid">
+                    <a href="#" class="cat-item"><i class="fa fa-map-marker-alt"></i> Jammu & Kashmir</a>
+                    <a href="#" class="cat-item"><i class="fa fa-flag"></i> India</a>
+                    <a href="#" class="cat-item"><i class="fa fa-globe"></i> World</a>
+                    <a href="#" class="cat-item"><i class="fa fa-gavel"></i> Politics</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="latest-news-section">
+            <div class="section-header">
+                <h3 class="section-title">Latest News</h3>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="grid-4-col">
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=400&q=80" alt="Snowfall">
+                    <div class="news-card-content">
+                        <span class="badge">Jammu & Kashmir</span>
+                        <h4 class="news-card-title">Srinagar: City of Lakes receives fresh snowfall</h4>
+                        <span class="date">May 31, 2025</span>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1541560052-5e137f229371?auto=format&fit=crop&w=400&q=80" alt="PM Modi">
+                    <div class="news-card-content">
+                        <span class="badge">India</span>
+                        <h4 class="news-card-title">PM Modi to visit J&K next month</h4>
+                        <span class="date">May 31, 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lang-section">
+            <h3 class="section-title">News in Your Language / آپ کی زبان میں خبریں / आपकी भाषा में समाचार</h3>
+            <div class="lang-grid">
+                <div class="lang-column">
+                    <div class="lang-col-header"><h3>English</h3> <a href="#">View All</a></div>
+                    <div class="lang-post">
+                        <div>
+                            <h4 class="lang-post-title">J&K: Security forces conduct search operation</h4>
+                            <span class="date">May 31, 2025</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=150&q=80" alt="">
+                    </div>
+                </div>
+                <div class="lang-column rtl">
+                    <div class="lang-col-header"><h3>اردو</h3> <a href="#">سب دیکھیں</a></div>
+                    <div class="lang-post">
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=150&q=80" alt="">
+                        <div>
+                            <h4 class="lang-post-title">سرینگر میں موسم سرما کی پہلی برفباری</h4>
+                            <span class="date">31 مئی 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang-column">
+                    <div class="lang-col-header"><h3>हिंदी</h3> <a href="#">सभी देखें</a></div>
+                    <div class="lang-post">
+                        <div>
+                            <h4 class="lang-post-title">जम्मू-कश्मीर: अनंतनाग में सुरक्षा बलों का तलाशी अभियान</h4>
+                            <span class="date">31 मई, 2025</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=150&q=80" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <div class="newsletter-info">
+                <i class="fa-regular fa-envelope"></i>
+                <div>
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get the latest news updates directly in your inbox.</p>
+                </div>
+            </div>
+            <div class="newsletter-input">
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo"><i class="fa-solid fa-mountain-sun"></i> APNA KASHMIR</div>
+                <p>Apna Kashmir is your trusted source for latest news from Jammu & Kashmir, India and around the world.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Jammu & Kashmir</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">World</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect With Us</h4>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p style="margin-top: 15px; font-size: 13px; color: #bbb;">Email: info@apnakashmir.com</p>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>&copy; 2026 Apna Kashmir. All Rights Reserved.</p>
+            <p><a href="#">Sitemap</a> | <a href="#">RSS Feed</a></p>
+        </div>
+    </footer>
 
 </body>
-
-  </html>
+          </html>
+  
